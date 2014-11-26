@@ -18,6 +18,7 @@ RUN mkdir -p /var/lib/transmission-daemon/incomplete && \
     chown -R debian-transmission: /etc/transmission-daemon    
 
 VOLUME ["/var/lib/transmission-daemon/downloads"]
+VOLUME ["/var/lib/transmission-daemon/incomplete"]
 
 EXPOSE 9091
 EXPOSE 12345
