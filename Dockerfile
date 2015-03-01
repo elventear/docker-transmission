@@ -14,6 +14,7 @@ ADD files/transmission-daemon /etc/transmission-daemon
 ADD files/run_transmission.sh /run_transmission.sh
 
 RUN mkdir -p /var/lib/transmission-daemon/incomplete && \
+    mkdir -p /var/lib/transmission-daemon/downloads && \
     chown -R debian-transmission: /var/lib/transmission-daemon && \
     chown -R debian-transmission: /etc/transmission-daemon    
 
