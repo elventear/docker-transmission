@@ -19,7 +19,7 @@ if [[ ! -f ${SETTINGS}.bak ]]; then
 
 fi
 
-unset TRANSMISION_ADMIN_PASS
+unset ADMIN_PASS
 
 exec $TRANSMISSION -f --no-portmap --config-dir $CONFIG_DIR --log-info 
 
